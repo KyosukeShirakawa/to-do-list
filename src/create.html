@@ -14,14 +14,19 @@
   </header>
   <div class="main">
     <div class="form-title">
-      <h1>Project details</h2>
+      <h2>Project details</h2>
     </div>
     <div class="form-container">
-      <form action="">
-        <label for="project-title">*Project Title</label>
-        <input type="text">
-        <label for="project-author">Project Author</label>
-        <input type="text">
+      <form id="project-form" action="">
+        <div class="input-container">
+          <label for="project-title">*Title</label>
+          <input type="text" id="project-name" required>
+        </div>
+        <div class="input-container">
+          <label for="project-author">*Author</label>
+          <input type="text" id="author-name" required >
+        </div>
+        <button class="create-btn" onclick="document.location='./todo.html'">Next</button>
       </form>
     </div>
 
